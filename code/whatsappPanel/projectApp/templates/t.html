@@ -1,0 +1,472 @@
+function validateExcel (){
+    var xlsxFile = document.getElementById('xlsxFile').files[0];
+        if (xlsxFile.files.length === 0) {
+            alert('Please upload an XLSX file.');
+            return false;
+        }
+       
+        
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const data = new Uint8Array(e.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+            const sheetName = workbook.SheetNames[0];
+            const worksheet = workbook.Sheets[sheetName];
+            const desiredColumns = ['first_name', 'last_name', 'city', 'Mobile 1'];
+            const columnNames = [];
+            const range = XLSX.utils.decode_range(worksheet['!ref']);
+            for (let C = range.s.c; C <= range.e.c; ++C) {
+                const cellAddress = { c: C, r: 0 };
+                const cellRef = XLSX.utils.encode_cell(cellAddress);
+                const cell = worksheet[cellRef];
+                columnNames.push(cell.v.trim().toLowerCase()); // Convert to lower case for case-insensitive comparison
+            }
+            console.log('Column names:', columnNames);
+            const missingColumns = desiredColumns.filter(col => !columnNames.includes(col.toLowerCase()));
+            if (missingColumns.length === 0) {
+                alert('File uploaded successfully.');
+            } else {
+                alert('The uploaded file is missing the following columns: ' + missingColumns.join(', '));
+            }
+       
+        };
+    reader.readAsArrayBuffer(xlsxFile.files[0]);
+
+    return true;
+        }
+    
+
+
+#############################################################################################################CODE##############################################################################################
+
+if request.method == 'POST':
+#logging.basicConfig(filename='whatsapp_automation.log', level=logging.INFO)  # Set up logging
+
+    invalid_numbers = []
+    
+    # Read numbers from the CSV or XLSX file
+    try:
+        data = pd.read_excel(xlsx_file)  # Replace with your CSV file path
+        
+        numbers = data['mobile 1']  # Replace 'phone_number_column_name' with your column name
+    except Exception as e:
+        return HttpResponse(f"Failed to read the file. Error: {e}")
+
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+
+    link = 'https://web.whatsapp.com'
+    driver.get(link)
+
+    time.sleep(30)
+
+'''numbers = []
+invalid_numbers = []
+with open(xlsx_file, 'r') as file:  # Update with the path to your numbers.txt file
+    for num in file.readlines():
+        numbers.append(num.strip())
+
+driver = webdriver.Chrome(ChromeDriverManager().install())
+link = 'https://web.whatsapp.com'
+driver.get(link)
+
+time.sleep(30)  '''
+
+for num in numbers:
+        try:
+            send_url = f'https://web.whatsapp.com/send?phone=+91{num}'
+            driver.get(send_url)
+
+            try:
+                invalid_number_pop_up = WebDriverWait(driver, 10).until(
+                    EC.presence_of_element_located((By.XPATH, '//div[@role="alert"]')))
+                invalid_number_pop_up.find_element(By.XPATH, '//span[contains(text(), "OK")]').click()
+                
+                invalid_numbers.append(num)
+                print(invalid_numbers)
+            except:
+                print(f"Invalid URL for number {num}. Moving to the next number.")
+
+            try:
+                attachment_button = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//div[@title="Attach"]')))
+                attachment_button.click()
+                time.sleep(8)
+
+                image_button = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')))
+                image_path =' C:/Users/Anju/Desktop/code/file/Django/whatsappPanel/projectApp/templates/img2.jpeg'
+                image_button.send_keys(image_path)
+                time.sleep(8)
+
+                input_field = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//div[@contenteditable="true"]')))
+                message = message
+                input_field.send_keys(message)
+                time.sleep(2)
+
+                send_button = WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, '//span[@data-icon="send"]')))
+                send_button.click()
+            except:
+                print(f"Failed to send message to: {num}. ")
+        except Exception as e:
+            print(f"Failed to send message to: {num}. ")
+
+        time.sleep(10)
+
+    # Write invalid numbers to an Excel file
+if invalid_numbers:
+    try:
+        workbook = xlsxwriter.Workbook("invalid_numbers.xlsx")
+        worksheet = workbook.add_worksheet()
+        for row_num, item in enumerate(invalid_numbers):
+                worksheet.write(row_num, 0, item)
+        workbook.close()
+    except Exception as e:
+            print(f"Failed to write to the Excel file. Error: {e}")
+
+    driver.quit()
+
+    return HttpResponse("WhatsApp images and messages sent successfully")
+else:
+    return HttpResponse("Invalid request method")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+      
+    const reader = new FileReader();
+    reader.onload = function (e) {
+        const data = new Uint8Array(e.target.result);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const sheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[sheetName];
+        const desiredColumns = ['first_name', 'last_name', 'city', 'mobile'];
+        const columnNames = [];
+        const range = XLSX.utils.decode_range(worksheet['!ref']);
+        for (let C = range.s.c; C <= range.e.c; ++C) {
+            const cellAddress = { c: C, r: 0 };
+            const cellRef = XLSX.utils.encode_cell(cellAddress);
+            const cell = worksheet[cellRef];
+            columnNames.push(cell.v.trim().toLowerCase()); 
+            // Convert to lower case for case-insensitive comparison
+        }
+        console.log('Column names:', columnNames);
+        const missingColumns = desiredColumns.filter(col => !columnNames.includes(col.toLowerCase()));
+        if (missingColumns.length === 0) {
+            alert('File uploaded successfully.');
+        } else {
+            alert('The uploaded file is missing the following columns: ' + missingColumns.join(', '));
+        }
+   
+    };
+reader.readAsArrayBuffer(xlsxFile.files[0]);
+********************************************************************************************************************
+In this version, I have used the $(document).ready() function to ensure that the DOM is fully loaded before the event is attached to the form. The submit event is attached to the form with the ID myFo
+
+            if ((xlsxValid && imgValid && messageValid) || (xlsxValid && imgValid) || (xlsxValid && messageValid)) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'upload/', // Your Django URL here
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader('X-CSRFToken', csrftoken);
+                    },
+                    success: function(response) {
+                        console.log(response);
+                        if (response.status === 'success') {
+                            alert('Data uploaded successfully.');
+                        } else {
+                            alert('Data upload failed.');
+                        }
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                        alert('An error occurred while uploading data.');
+                    }
+                });
+            } else {
+alert('Validation failed. Please check your inputs.');
+            }
+        });
+  
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    try:
+    attachment_button = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//div[@title="Attach"]')))
+    attachment_button.click()
+    time.sleep(8)
+
+    image_button = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')))
+    image_path = img_file
+    image_button.send_keys(image_path)
+    time.sleep(8)
+
+    input_field = WebDriverWait(driver, 8).until(EC.presence_of_element_located((By.XPATH, '//div[@contenteditable="true"]')))
+    message_text = message
+    input_field.send_keys(message_text)
+    time.sleep(2)
+
+    send_button = WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, '//span[@data-icon="send"]')))
+    send_button.click()
+    sent_successfully = True 
+except:
+    print(f"Failed to send message to: {num}. ")
+except Exception as e:
+print(f"Failed to send message to: {num}. ")
+service = Service(ChromeDriverManager().install())
+driver = webdriver.Chrome(service=service)
+
+link = 'https://web.whatsapp.com'
+driver.get(link)
+
+time.sleep(35)
+
+for num in numbers:
+    try:
+        send_url = f'https://web.whatsapp.com/send?phone=+91{num}'
+        driver.get(send_url)
+        print(send_url)
+        try:
+            invalid_number_pop_up = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, '//div[@role="alert"]')))
+            invalid_number_pop_up.find_element(By.XPATH, '//span[contains(text(), "OK")]').click()
+            
+            invalid_numbers.append(num)
+            print(invalid_numbers)
+       
+        except TimeoutException:
+           print(f"No alert found for the number {num}. Moving to the next number.")
+        except  NoSuchElementException:
+
+             print(f"Invalid URL for number {num}. Moving to the next number.")
+    except Exception as e:
+        print(f"Error occurred for the number {num}: {e}")
+
+     
+
+    time.sleep(10)
+driver.quit()
+if sent_successfully:
+     return HttpResponse("WhatsApp images and messages sent successfully")
+else:
+    
+    return HttpResponse("Failed to send any  or images.")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ''def whatsapp_automation_img_and_message(request):
+    xlsx_file = request.FILES['xlsxFile'] if request.method == 'POST' else None
+    img_file = request.FILES['imgFile'] if request.method == 'POST' else None
+    message = request.POST.get('message', '')
+    invalid_numbers = []
+    numbers = []
+    if request.method == 'POST':
+        invalid_numbers = []
+        
+        # Read numbers from the CSV or XLSX file
+        try:
+            data = pd.read_excel(xlsx_file)  # Replace with your CSV file path
+            
+            numbers = data['mobile']  # Replace 'phone_number_column_name' with your column name
+        except Exception as e:
+            return HttpResponse(f"Failed to read the file. Error: {e}")
+
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+
+        link = 'https://web.whatsapp.com'
+        driver.get(link)
+
+        time.sleep(30)
+
+        for num in numbers:
+            try:
+                send_url = f'https://web.whatsapp.com/send?phone=+91{num}'
+                driver.get(send_url)
+
+                try:
+                    # Wait for the invalid number pop-up to appear
+                    invalid_number_pop_up = WebDriverWait(driver, 6).until(
+                        EC.presence_of_element_located((By.XPATH, '//div[@role="alert"]')))
+                    # Click the "OK" button to dismiss the pop-up
+                    invalid_number_pop_up.find_element(By.XPATH, '//span[contains(text(), "OK")]').click()
+                    
+                    invalid_numbers.append(num)
+                   
+                except:
+                    
+                    try:
+                        attachment_button = WebDriverWait(driver, 7).until(EC.presence_of_element_located((By.XPATH, '//div[@title="Attach"]')))
+                        attachment_button.click()
+                        time.sleep(8)
+
+                        image_button = WebDriverWait(driver, 7).until(EC.presence_of_element_located((By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')))
+                        image_path = img_file
+                        image_button.send_keys(image_path)
+                        time.sleep(8)
+
+                        input_field = WebDriverWait(driver, 7).until(EC.presence_of_element_located((By.XPATH, '//div[@contenteditable="true"]')))
+                        message = message
+                        input_field.send_keys(message)
+                        time.sleep(2)
+
+                        send_button = WebDriverWait(driver, 8).until(EC.element_to_be_clickable((By.XPATH, '//span[@data-icon="send"]')))
+                        send_button.click()
+
+                    except Exception as e:
+                        print(f"Failed to send message to: {num}. Error: {e}")
+
+                time.sleep(10)
+
+            except Exception as e:
+                print(f"Failed to send message to: {num}. Error: {e}")
+        
+        # Logout
+        #driver.get('https://web.whatsapp.com/logout')
+        #time.sleep(5)
+        driver.quit()
+       
+        
+        # Write invalid numbers to a new CSV file
+           
+
+        return HttpResponse("WhatsApp images and messages sent successfully")
+    else:
+        return HttpResponse("Invalid request method")'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        $(document).on('submit','#myForm')(function(e) {
+            e.preventDefault();
+            //const formData = new FormData(this);
+            var formData = new FormData(document.getElementById("myForm"));
+            const csrftoken = getCookie('csrftoken');
+            const xlsxValid = validateXLSX();
+            const imgValid = validateImage();
+            const messageValid = validateMessage();
+            if ((xlsxValid && imgValid && messageValid) || (xlsxValid && imgValid) || (xlsxValid && messageValid)) {
+            fetch('upload/', {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'X-CSRFToken': csrftoken
+                }
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log(data);
+                if (data.status === 'success') {
+                    alert('Data uploaded successfully.');
+                } else {
+                    alert('Data upload failed.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while uploading data.');
+            });
+        } else {
+            alert('Validation failed. Please check your inputs.');
+        }
+    });

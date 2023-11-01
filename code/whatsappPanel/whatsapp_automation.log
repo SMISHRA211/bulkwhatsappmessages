@@ -1,0 +1,1198 @@
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 176, in whatsapp_automation_img
+    with open('path_to_numbers.txt', 'r') as file:  # Update with the path to your numbers.txt file
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'path_to_numbers.txt'
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 199, in whatsapp_automation_img
+    image_button = driver.find_element(By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x008EA9F2]
+	(No symbol) [0x009568CB]
+	(No symbol) [0x00965103]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 197, in whatsapp_automation_img
+    attachment_button.click()
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00906F6D]
+	(No symbol) [0x0090879A]
+	(No symbol) [0x00908840]
+	(No symbol) [0x0093B47C]
+	(No symbol) [0x0093A0AF]
+	(No symbol) [0x0093869B]
+	(No symbol) [0x00937A35]
+	(No symbol) [0x0092FF9A]
+	(No symbol) [0x00952B5C]
+	(No symbol) [0x0092F9D6]
+	(No symbol) [0x00952DD4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 205, in whatsapp_automation_img
+    send_button = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, '//span[@data-icon="send"]')))
+                  ^^^^^^^^^^^^^
+NameError: name 'WebDriverWait' is not defined
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 107, in whatsapp_automation_img
+    image_button = driver.find_element(By.XPATH, '//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x008EA9F2]
+	(No symbol) [0x009568CB]
+	(No symbol) [0x00965103]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\urls.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00A84DE3+43907]
+	(No symbol) [0x00A10741]
+	(No symbol) [0x009033ED]
+	(No symbol) [0x00936760]
+	(No symbol) [0x00936C2B]
+	(No symbol) [0x00966F62]
+	(No symbol) [0x00952BA4]
+	(No symbol) [0x009655CA]
+	(No symbol) [0x00952956]
+	(No symbol) [0x0092E17E]
+	(No symbol) [0x0092F32D]
+	GetHandleVerifier [0x00D35AF9+2865305]
+	GetHandleVerifier [0x00D7E78B+3163435]
+	GetHandleVerifier [0x00D78441+3138017]
+	GetHandleVerifier [0x00B0E0F0+605840]
+	(No symbol) [0x00A1A64C]
+	(No symbol) [0x00A16638]
+	(No symbol) [0x00A1675F]
+	(No symbol) [0x00A08DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+WARNING:django.request:Not Found: /favicon.ico
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x00E24DE3+43907]
+	(No symbol) [0x00DB0741]
+	(No symbol) [0x00CA33ED]
+	(No symbol) [0x00CD6760]
+	(No symbol) [0x00CD6C2B]
+	(No symbol) [0x00D06F62]
+	(No symbol) [0x00CF2BA4]
+	(No symbol) [0x00D055CA]
+	(No symbol) [0x00CF2956]
+	(No symbol) [0x00CCE17E]
+	(No symbol) [0x00CCF32D]
+	GetHandleVerifier [0x010D5AF9+2865305]
+	GetHandleVerifier [0x0111E78B+3163435]
+	GetHandleVerifier [0x01118441+3138017]
+	GetHandleVerifier [0x00EAE0F0+605840]
+	(No symbol) [0x00DBA64C]
+	(No symbol) [0x00DB6638]
+	(No symbol) [0x00DB675F]
+	(No symbol) [0x00DA8DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x00596760]
+	(No symbol) [0x00596C2B]
+	(No symbol) [0x005C6F62]
+	(No symbol) [0x005B2BA4]
+	(No symbol) [0x005C55CA]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x00596760]
+	(No symbol) [0x00596C2B]
+	(No symbol) [0x005C6F62]
+	(No symbol) [0x005B2BA4]
+	(No symbol) [0x005C55CA]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x00596760]
+	(No symbol) [0x00596C2B]
+	(No symbol) [0x005C6F62]
+	(No symbol) [0x005B2BA4]
+	(No symbol) [0x005C55CA]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x00596760]
+	(No symbol) [0x00596C2B]
+	(No symbol) [0x005C6F62]
+	(No symbol) [0x005B2BA4]
+	(No symbol) [0x005C55CA]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CEB2DDC0D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/0ea24935fda5f7677572b39c6b6d4738/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CEB2DDCF50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/0ea24935fda5f7677572b39c6b6d4738/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CEB2DDEA50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/0ea24935fda5f7677572b39c6b6d4738/url
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Python311\Lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Python311\Lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000002CEB2DDE150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 142, in whatsapp_automation_img_and_message
+    driver.get(send_url)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=62399): Max retries exceeded with url: /session/0ea24935fda5f7677572b39c6b6d4738/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002CEB2DDE150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F56B78F5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c3ac47081ba152da27a20c98a983b513/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F56B78EE50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c3ac47081ba152da27a20c98a983b513/url
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F56B78D950>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/c3ac47081ba152da27a20c98a983b513/url
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Python311\Lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Python311\Lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001F56B78D510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 142, in whatsapp_automation_img_and_message
+    driver.get(send_url)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=50250): Max retries exceeded with url: /session/c3ac47081ba152da27a20c98a983b513/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F56B78D510>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x00596760]
+	(No symbol) [0x00596C2B]
+	(No symbol) [0x005C6F62]
+	(No symbol) [0x005B2BA4]
+	(No symbol) [0x005C55CA]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 142, in whatsapp_automation_img_and_message
+    driver.get(send_url)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x0054A9F2]
+	(No symbol) [0x005B68CB]
+	(No symbol) [0x005C5103]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py", line 142, in whatsapp_automation_img_and_message
+    driver.get(send_url)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 449, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 440, in execute
+    self.error_handler.check_response(response)
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 245, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x006E4DE3+43907]
+	(No symbol) [0x00670741]
+	(No symbol) [0x005633ED]
+	(No symbol) [0x0054A9F2]
+	(No symbol) [0x005B68CB]
+	(No symbol) [0x005C5103]
+	(No symbol) [0x005B2956]
+	(No symbol) [0x0058E17E]
+	(No symbol) [0x0058F32D]
+	GetHandleVerifier [0x00995AF9+2865305]
+	GetHandleVerifier [0x009DE78B+3163435]
+	GetHandleVerifier [0x009D8441+3138017]
+	GetHandleVerifier [0x0076E0F0+605840]
+	(No symbol) [0x0067A64C]
+	(No symbol) [0x00676638]
+	(No symbol) [0x0067675F]
+	(No symbol) [0x00668DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x01044DE3+43907]
+	(No symbol) [0x00FD0741]
+	(No symbol) [0x00EC33ED]
+	(No symbol) [0x00EF6760]
+	(No symbol) [0x00EF6C2B]
+	(No symbol) [0x00F26F62]
+	(No symbol) [0x00F12BA4]
+	(No symbol) [0x00F255CA]
+	(No symbol) [0x00F12956]
+	(No symbol) [0x00EEE17E]
+	(No symbol) [0x00EEF32D]
+	GetHandleVerifier [0x012F5AF9+2865305]
+	GetHandleVerifier [0x0133E78B+3163435]
+	GetHandleVerifier [0x01338441+3138017]
+	GetHandleVerifier [0x010CE0F0+605840]
+	(No symbol) [0x00FDA64C]
+	(No symbol) [0x00FD6638]
+	(No symbol) [0x00FD675F]
+	(No symbol) [0x00FC8DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\code\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anju\Desktop\code\file\Django\whatsappPanel\projectApp\views.py", line 78, in whatsapp_automation_img
+    with open('C:/Users/Anju/Desktop/Django/whatsappPanel/projectApp/templatest.txt', 'r') as file:  # Update with the path to your numbers.txt file
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'C:/Users/Anju/Desktop/Django/whatsappPanel/projectApp/templatest.txt'
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\code\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x01044DE3+43907]
+	(No symbol) [0x00FD0741]
+	(No symbol) [0x00EC33ED]
+	(No symbol) [0x00EF6760]
+	(No symbol) [0x00EF6C2B]
+	(No symbol) [0x00F26F62]
+	(No symbol) [0x00F12BA4]
+	(No symbol) [0x00F255CA]
+	(No symbol) [0x00F12956]
+	(No symbol) [0x00EEE17E]
+	(No symbol) [0x00EEF32D]
+	GetHandleVerifier [0x012F5AF9+2865305]
+	GetHandleVerifier [0x0133E78B+3163435]
+	GetHandleVerifier [0x01338441+3138017]
+	GetHandleVerifier [0x010CE0F0+605840]
+	(No symbol) [0x00FDA64C]
+	(No symbol) [0x00FD6638]
+	(No symbol) [0x00FD675F]
+	(No symbol) [0x00FC8DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+ERROR:root:Error occurred: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@title="Attach"]"}
+  (Session info: chrome=118.0.5993.71)
+Stacktrace:
+	GetHandleVerifier [0x01044DE3+43907]
+	(No symbol) [0x00FD0741]
+	(No symbol) [0x00EC33ED]
+	(No symbol) [0x00EF6760]
+	(No symbol) [0x00EF6C2B]
+	(No symbol) [0x00F26F62]
+	(No symbol) [0x00F12BA4]
+	(No symbol) [0x00F255CA]
+	(No symbol) [0x00F12956]
+	(No symbol) [0x00EEE17E]
+	(No symbol) [0x00EEF32D]
+	GetHandleVerifier [0x012F5AF9+2865305]
+	GetHandleVerifier [0x0133E78B+3163435]
+	GetHandleVerifier [0x01338441+3138017]
+	GetHandleVerifier [0x010CE0F0+605840]
+	(No symbol) [0x00FDA64C]
+	(No symbol) [0x00FD6638]
+	(No symbol) [0x00FD675F]
+	(No symbol) [0x00FC8DB7]
+	BaseThreadInitThunk [0x76357BA9+25]
+	RtlInitializeExceptionChain [0x77CBBD3B+107]
+	RtlClearBits [0x77CBBCBF+191]
+
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\code\file\Django\whatsappPanel\projectApp\views.py changed, reloading.
+INFO:WDM:====== WebDriver manager ======
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Get LATEST chromedriver version for google-chrome
+INFO:WDM:Driver [C:\Users\Anju\.wdm\drivers\chromedriver\win64\118.0.5993.70\chromedriver-win32/chromedriver.exe] found in cache
+INFO:django.utils.autoreload:C:\Users\Anju\Desktop\code\file\Django\whatsappPanel\projectApp\urls.py changed, reloading.

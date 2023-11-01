@@ -1,0 +1,310 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+       
+        body {
+            font-family: Arial, sans-serif;
+            color: #070664;
+            
+        }
+        
+        form {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #93d5d7;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .top {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+        }
+        
+        button {
+            background-color: #525a52;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #a0458e;
+        }
+        
+        button:active {
+            background-color: #4c3c8b;
+        }
+        
+        button:focus {
+            outline: none;
+        }
+        
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        h3 {
+            margin-bottom: 30px;
+            color: #333;
+            text-align: center;
+        }
+        
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   
+    <div class="top"><h3 style="color:rgb(3, 3, 3);text-align:center"> Send Automate Messages&Images</h3>
+        <form id="myForm" method="POST" action="" enctype="multipart/form-data">
+            <!-- Form fields go here -->
+        
+        
+        {% csrf_token %}
+            <label for="xlsxFile">Upload XLSX File:</label>
+            <input type="file" id="xlsxFile" name="xlsxFile" accept=".xlsx" onchange="validateXLSX()" required>
+            <span id="xlsxValidationMessage"></span>
+    
+            <label for="imgFile">Upload Image:</label>
+            <input type="file" id="imgFile" name="imgFile" accept="image/*" onchange="validateImage()" >
+            <span id="imgValidationMessage"></span>
+    
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" oninput="validateMessage()"></textarea>
+            <span id="messageValidationMessage"></span>
+    
+            <input type="submit" value="Submit">
+        </form>
+    
+    </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+
+<script>
+    function validateXLSX() {
+        const xlsxFile = document.getElementById('xlsxFile');
+        const fileName = xlsxFile.value;
+        const validExtensions = ['.xlsx', '.xls'];
+        const fileExtension = fileName.substring(fileName.lastIndexOf('.')).toLowerCase();
+        
+        if (xlsxFile.files.length === 0) {
+            alert('Please upload an XLSX file.');
+            return false;
+        }
+       
+      
+    return true;
+
+     
+    }
+
+    function validateImage() {
+        const imgFile = document.getElementById('imgFile');
+        const fileName = imgFile.value;
+        const validExtensions = ['.jpg', '.jpeg', '.png', '.gif'];
+        const fileExtension = fileName.substring(fileName.lastIndexOf('.')).toLowerCase();
+        
+
+        if (!validExtensions.includes(fileExtension)) {
+            document.getElementById('imgValidationMessage').innerText = 'Invalid file type. Please upload a valid image file.';
+            return false; //
+        } else {
+            document.getElementById('imgValidationMessage').innerText = 'File is valid.';
+            return true;
+        }
+    }
+
+    function validateMessage() {
+        const message = document.getElementById('message').value;
+        if (message.trim() === '') {
+            document.getElementById('messageValidationMessage').innerText = 'Message should not be empty.';
+            return false; 
+        } else {
+            document.getElementById('messageValidationMessage').innerText = 'Message is valid.';
+            return true;
+            
+        }
+    }
+
+
+
+    $(document).ready(function() {
+        // Function to get CSRF token from the cookie
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    // Does this cookie string begin with the name we want?
+                    if (cookie.substring(0, name.length + 1) === name + '=') {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+          
+        }
+
+        
+
+
+
+$(document).on('submit', '#myForm', function (e) {
+    e.preventDefault();
+    var formData = new FormData(document.getElementById("myForm"));
+    const csrftoken = getCookie('csrftoken');
+    const xlsxValid = validateXLSX();
+    const imgValid = validateImage();
+    const messageValid = validateMessage();
+
+    if (xlsxValid && imgValid && messageValid) {
+        fetch('whatsapp_automation_img_and_message/', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': csrftoken
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+            if (data.status === 'success') {
+                alert('WhatsApp images and messages sent successfully.');
+            } else {
+                alert('Failed to send any images or messages.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while sending messages.');
+        });
+    }
+     else if (xlsxValid && imgValid) {
+        fetch('whatsapp_automation_img/', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': csrftoken
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            console.log(data);
+                if (data.imgFile === 'WhatsApp image sent successfully') {
+                    alert('WhatsApp image sent successfully.');
+                    // Perform other actions here for successful response
+                } else {
+                    alert('Failed to send any image.');
+                    // Perform other actions here for failed response
+                }
+            
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while sending images.');
+        });
+    } else if (xlsxValid && messageValid) {
+        fetch('whatsapp_automation/', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'X-CSRFToken': csrftoken
+            }
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+                console.log(data);
+                if (data.message === 'WhatsApp messages sent successfully') {
+                    alert('WhatsApp messages sent successfully.');
+                    // Perform other actions here for successful response
+                } else {
+                    alert('Failed to send any messages.');
+                    // Perform other actions here for failed response
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while sending messages.');
+                // Perform other actions here for error
+            });
+        } else {
+            alert('Validation failed. Please check your inputs.');
+        }
+});
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
+
+
+
+
+
+
+
